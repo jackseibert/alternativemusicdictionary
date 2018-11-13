@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Jack Seibert and Jonny Senger -->
+<!-- Alternative Music Dictionary (Final Project) -->
+<!-- CIS 3034 -->
+<!-- 12-16-2017 -->
+<html>
+<head>
+<h1 align = 'center'> <strong> Post Hardcore </strong> </h1>
+<p align = 'center'> <img src = 'bmth.jpg' width = '400' height = '250'> </p>
+<a href = "homepage.html"> Click here to go back to the homepage </a>
+<title>Post Hardcore- Alternative Music Dictionary</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="http:/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- This is the script section of the code where we use jQuery code to call 
+everything with an ID of accordion and to create the icons for the accordion. -->
+<script>
+  $( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
+} );
+</script>
+</head>
+
+<body>
+
+<!-- The style section includes the CSS code that cleans up the web page. -->
+<style>
+body {
+background-color: #faf2e4;
+margin: 0 15%;
+font-family: sans-serif;
+}
+h1 {
+text-align: center;
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 1px solid #57b1dc;
+margin-top: 30px;
+}
+h2 {
+text-align: center;
+}
+</style>
+
+<h2>Post-hardcore is a genre of music that developed from hardcore punk, 
+itself an offshoot of the broader punk rock movement. Like post-punk, post-hardcore 
+is a term for a broad constellation of groups. Many emerged from the hardcore punk 
+scene, or took inspiration from hardcore, while concerning themselves with a wider 
+degree of expression.</h2>
+
+<div id="accordion">
+  <h3>Bring Me The Horizon</h3>
+  <div>
+    <p>
+   Bring Me the Horizon, often known by the acronym BMTH, are a British 
+rock band from Sheffield, South Yorkshire. They consist of the members 
+Oliver Sykes, Jordan Fish, Lee Malia, Matt Nicholls, Jona Weinhofen, and Curtis Ward.
+    </p>
+  </div>
+  <h3>Asking Alexandria</h3>
+  <div>
+    <p>
+   Asking Alexandria are an English rock band from York, North Yorkshire, consisting
+of lead vocalist Danny Worsnop, guitarists Ben Bruce and Cameron Liddell, drummer 
+James Cassells and bassist Sam Bettley.
+    </p>
+  </div>
+  <h3>Throw the Fight</h3>
+  <div>
+    <p>
+	Throw the Fight is an American alternative rock band originating from
+Minneapolis, Minnesota.
+    </p>
+  </div>
+  <h3>Crown the Empire</h3>
+  <div>
+    <p>
+	Crown the Empire is an American rock band formed in 2010 in Dallas, Texas. 
+They have released one EP and three full-length albums.
+    </p>
+    </div>
+    <h3>Of Mice & Men</h3>
+  <div>
+    <p>
+	Of Mice & Men is an American metalcore band from Orange County, California.
+The band's lineup currently consists of lead vocalist and bassist Aaron Pauley, 
+lead guitarist Phil Manansala, rhythm guitarist Alan Ashby, and drummer 
+Valentino Arteaga.
+    </p>
+    </div>
+</div>
+
+<p></p>
+
+<footer>Created by Jack Seibert and Jonny Senger (2017)</footer>
+
+<p></p>
+
+</body>
+
+</html>

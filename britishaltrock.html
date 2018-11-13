@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Jack Seibert and Jonny Senger -->
+<!-- Alternative Music Dictionary (Final Project) -->
+<!-- CIS 3034 -->
+<!-- 12-16-2017 -->
+<html>
+<head>
+<h1 align = 'center'> <strong> British Alternative Rock </strong> </h1>
+<p align = 'center'> <img src = 'theband.jpg' width = '400' height = '250'> </p>
+<a href = "homepage.html"> Click here to go back to the homepage </a>
+<title>British Alternative Rock- Alternative Music Dictionary</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="http:/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- This is the script section of the code where we use jQuery code to call 
+everything with an ID of accordion and to create the icons for the accordion. -->
+<script>
+$( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
+} );
+</script>
+</head>
+
+<body>
+
+<!-- The style section includes the CSS code that cleans up the web page. -->
+<style>
+body {
+background-color: #faf2e4;
+margin: 0 15%;
+font-family: sans-serif;
+}
+h1 {
+text-align: center;
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 1px solid #57b1dc;
+margin-top: 30px;
+}
+h2 {
+text-align: center;
+}
+</style>
+
+<h2>A less intense version of rock and a more intense version of pop. 
+Typically strays from the generic lyrics of pop. Lots of sub-categories, but
+this category is focused on the bands from Great Britain.</h2> 
+
+<div id="accordion">
+  <h3>Catfish and the Bottlemen</h3>
+  <div>
+    <p>
+   Catfish and the Bottlemen are an English rock band, formed in
+ Llandudno, North Wales in 2007. Their debut album, The Balcony, reached number 10 in 
+ the UK Albums Chart and achieved Platinum status on 30 December 2016. 
+    </p>
+  </div>
+  <h3>The 1975</h3>
+  <div>
+    <p>
+   The 1975 are an English rock band originating from Manchester. The group
+ consists of lead vocalist and rhythm guitarist Matthew "Matty" Healy, lead guitarist
+  Adam Hann, bassist Ross MacDonald, and drummer George Daniel.
+    </p>
+  </div>
+  <h3>Pale Waves</h3>
+  <div>
+    <p>
+	Pale Waves are a female fronted band from the U.K. with four singles 
+released to date. They are often seen collaborating with members of The 1975 and 
+are preparing for their first full length release in the coming months.
+    </p>
+  </div>
+  <h3>Black Foxxes</h3>
+  <div>
+    <p>
+	Black Foxxes are a three piece band fronted by Mark Holley that have
+ gained an impressive following the last few years with their debut full 
+ length album, "I'm Not Well".
+    </p>
+    </div>
+    <h3>The XCERTS</h3>
+  <div>
+    <p>
+	The XCERTS are a three piece rock band originally formed in Aberdeen,
+ Scotland, United Kingdom. They have released three studio albums, with their latest, 
+ There Is Only You, peaking at #96 on the UK Albums Chart.
+    </p>
+    </div>
+</div>
+
+<p></p>
+
+<footer>Created by Jack Seibert and Jonny Senger (2017)</footer>
+
+<p></p>
+
+</body>
+
+</html>

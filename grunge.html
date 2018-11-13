@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Jack Seibert and Jonny Senger -->
+<!-- Alternative Music Dictionary (Final Project) -->
+<!-- CIS 3034 -->
+<!-- 12-16-2017 -->
+<html>
+<head>
+<h1 align = 'center'> <strong> Grunge </strong> </h1>
+<p align = 'center'> <img src = 'nirvana.jpg' width = '400' height = '250'> </p>
+<a href = "homepage.html"> Click here to go back to the homepage </a>
+<title>90s Grunge- Alternative Music Dictionary</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="http:/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- This is the script section of the code where we use jQuery code to call 
+everything with an ID of accordion and to create the icons for the accordion. -->
+<script>
+$( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
+} );
+</script>
+</head>
+
+<body>
+
+<!-- The style section includes the CSS code that cleans up the web page. -->
+<style>
+body {
+background-color: #faf2e4;
+margin: 0 15%;
+font-family: sans-serif;
+}
+h1 {
+text-align: center;
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 1px solid #57b1dc;
+margin-top: 30px;
+}
+h2 {
+text-align: center;
+}
+</style>
+
+<h2>Grunge is an alternative rock musical style started in the early 1990s 
+featuring heavy electric guitar and dragging lyrics.</h2>
+
+<div id="accordion">
+  <h3>Nirvana</h3>
+  <div>
+    <p>
+   Nirvana was an American rock band formed by singer and guitarist Kurt Cobain 
+and bassist Krist Novoselic in Aberdeen, Washington, in 1987. Nirvana went 
+through a succession of drummers, the longest-lasting being Dave Grohl, 
+who joined in 1990.
+    </p>
+  </div>
+  <h3>Pearl Jam</h3>
+  <div>
+    <p>
+   Pearl Jam is an American rock band formed in Seattle, Washington, in 1990.
+Since its inception, the band's line-up has consisted of Eddie Vedder,
+Mike McCready, Stone Gossard and Jeff Ament.
+    </p>
+  </div>
+  <h3>Alice in Chains</h3>
+  <div>
+    <p>
+	Alice in Chains is an American rock band formed in Seattle, Washington, 
+in 1987 by guitarist/vocalist Jerry Cantrell and drummer Sean Kinney, who
+then recruited bassist Mike Starr and lead vocalist Layne Staley.
+    </p>
+  </div>
+  <h3>Soundgarden</h3>
+  <div>
+    <p>
+	Soundgarden is an American rock band formed in Seattle, Washington, in 1984
+by singer and rhythm guitarist Chris Cornell, lead guitarist Kim Thayil, 
+and bassist Hiro Yamamoto.
+    </p>
+    </div>
+    <h3>Hole</h3>
+  <div>
+    <p>
+	Hole was an American alternative rock band that formed in Los Angeles, 
+California in 1989 by singer and guitarist Courtney Love and lead guitarist 
+Eric Erlandson.
+    </p>
+    </div>
+</div>
+
+<p></p>
+
+<footer>Created by Jack Seibert and Jonny Senger (2017)</footer>
+
+<p></p>
+  
+</body>
+
+</html>
